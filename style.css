@@ -1,0 +1,73 @@
+/* Genel stil tanımlamaları */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hedvig Letters Serif", serif;
+  position: relative;
+}
+
+
+.arka-plan-resimli {
+  background-image: url('img.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+
+/* Navigasyon bağlantıları */
+.navbar a {
+  text-decoration: none;
+  color: rgb(75, 3, 51);
+  transition: color 0.3s ease;
+}
+
+/* Navigasyon bağlantıları hover efekti */
+.navbar a:hover {
+  color: brown;
+}
+
+/* Navigasyon başlıkları */
+h2 {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+/* Navigasyon başlıkları hover efekti */
+h2:hover {
+  color: brown;
+}
+
+/* Mobil ekranlar için özelleştirmeler */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+}
